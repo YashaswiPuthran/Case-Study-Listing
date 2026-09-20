@@ -1,0 +1,20 @@
+uuid: 91954823-7a0c-48bd-a31d-7200238c22f0
+langcode: en
+status: false
+dependencies:
+  theme:
+    - case_studies_theme
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: case_studies_theme_primary_admin_actions
+theme: case_studies_theme
+region: header
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

@@ -1,0 +1,29 @@
+uuid: 701d54e1-6b1a-40d7-a840-7401ae5671c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_industry
+    - node.type.case_studies
+    - taxonomy.vocabulary.industry
+id: node.case_studies.field_industry
+field_name: field_industry
+entity_type: node
+bundle: case_studies
+label: Industry
+description: 'Select the industry this case study belongs to. Used to power the Industry filter on the listing page.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      industry: industry
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,11 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/modules/sdc/src/metadata.schema.json
+name: Filter
+status: stable
+description: 'Layout shell for the Case Studies exposed filter form.'
+props:
+  type: object
+  properties: {}
+slots:
+  content:
+    title: Content
+    description: 'The rendered exposed form fields and actions.'

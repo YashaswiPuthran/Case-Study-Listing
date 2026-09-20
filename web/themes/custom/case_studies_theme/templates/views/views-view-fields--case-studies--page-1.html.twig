@@ -1,0 +1,11 @@
+{% embed 'case_studies_theme:case-study-card' with {
+  title: fields.title.content|render|striptags|trim,
+  description: fields.field_short_description.content|render|striptags|trim,
+  industry_label: fields.field_industry.content|render|striptags|trim,
+  region_label: fields.field_region.content|render|striptags|trim,
+} %}
+  {% block image %}
+    {{ fields.field_image.content }}
+  {% endblock %}
+{% endembed %}
+

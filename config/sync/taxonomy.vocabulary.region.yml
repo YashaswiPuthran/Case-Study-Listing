@@ -1,0 +1,9 @@
+uuid: 3394dc6c-cd82-4cc4-a95e-845fb9ab1c4a
+langcode: en
+status: true
+dependencies: {  }
+name: Region
+vid: region
+description: 'Regions associated with case studies. Used to populate the Region filter on the Case Studies listing page.'
+weight: 0
+new_revision: false

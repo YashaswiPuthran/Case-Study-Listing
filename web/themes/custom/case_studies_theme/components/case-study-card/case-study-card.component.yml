@@ -1,0 +1,25 @@
+$schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/modules/sdc/src/metadata.schema.json
+name: Case study card
+status: stable
+description: 'Card displaying one Case Study: image, Industry/Region tags, title, and short description.'
+props:
+  type: object
+  required:
+    - title
+  properties:
+    title:
+      type: string
+      title: Title
+    description:
+      type: string
+      title: Short description
+    industry_label:
+      type: string
+      title: Industry label
+    region_label:
+      type: string
+      title: Region label
+slots:
+  image:
+    title: Image
+    description: 'Rendered image field markup for this case study.'

@@ -1,0 +1,9 @@
+uuid: fc108995-ec36-4aa7-ae89-4686a1c8b972
+langcode: en
+status: true
+dependencies: {  }
+name: Industry
+vid: industry
+description: 'Industries associated with case studies. Used to populate the Industry filter on the Case Studies listing page.'
+weight: 0
+new_revision: false

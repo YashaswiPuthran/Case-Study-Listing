@@ -1,0 +1,22 @@
+uuid: 663cb6c6-8ea7-488e-afb4-afc1a3919dac
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - case_studies_theme
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: case_studies_theme_content
+theme: case_studies_theme
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

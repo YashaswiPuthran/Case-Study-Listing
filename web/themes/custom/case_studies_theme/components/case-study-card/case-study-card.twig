@@ -1,0 +1,23 @@
+<div class="case-study-card">
+  <div class="case-study-card__image-wrap">
+    {% block image %}{% endblock %}
+  </div>
+  <div class="case-study-card__body">
+    <div class="case-study-card__tags">
+      {% if industry_label %}
+        <span class="case-study-card__tag case-study-card__tag--technology">
+          {{ industry_label }}
+        </span>
+      {% endif %}
+      {% if region_label %}
+        <span class="case-study-card__tag case-study-card__tag--region">
+          {{ region_label }}
+        </span>
+      {% endif %}
+    </div>
+    <h3 class="case-study-card__title">{{ title }}</h3>
+    {% if description %}
+      <p class="case-study-card__description">{{ description }}</p>
+    {% endif %}
+  </div>
+</div>

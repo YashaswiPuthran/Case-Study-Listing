@@ -1,0 +1,29 @@
+{%
+  set classes = [
+    'container',
+    'case-studies-wrap',
+    dom_id ? 'js-view-dom-id-' ~ dom_id,
+  ]
+%}
+<div{{ attributes.addClass(classes) }}>
+
+  {% if header %}
+    <div class="case-studies-header">
+      {{ header }}
+    </div>
+  {% endif %}
+  {{ exposed }}
+  {{ attachment_before }}
+
+  {% if rows -%}
+    <div class="case-studies-grid">
+      {{ rows }}
+    </div>
+  {% elseif empty -%}
+    {{ empty }}
+  {% endif %}
+  {{ pager }}
+
+  {{ attachment_after }}
+  {{ more }}
+</div>

@@ -1,0 +1,55 @@
+uuid: afbee5dd-bb69-4b78-8bc6-121e438f33bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.case_studies.field_image
+    - field.field.node.case_studies.field_industry
+    - field.field.node.case_studies.field_region
+    - field.field.node.case_studies.field_short_description
+    - node.type.case_studies
+  module:
+    - user
+id: node.case_studies.default
+targetEntityType: node
+bundle: case_studies
+mode: default
+content:
+  field_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_industry:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_region:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_short_description:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

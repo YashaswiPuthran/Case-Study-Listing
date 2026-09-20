@@ -1,0 +1,40 @@
+.pager {
+  display: flex;
+  justify-content: center;
+  margin-block-start: var(--space-lg);
+}
+
+.pager .js-pager__items {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pager .js-pager__items li {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}
+
+.pager a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.25rem;
+  height: 2.25rem;
+  padding-inline: var(--space-sm);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.pager a:hover,
+.pager a:focus {
+  border-color: var(--color-primary);
+  background: var(--color-primary);
+  color: var(--color-surface);
+}

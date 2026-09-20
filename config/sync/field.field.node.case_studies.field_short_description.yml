@@ -1,0 +1,19 @@
+uuid: fce3afe9-5e90-4996-9d26-ee42c12f3699
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_short_description
+    - node.type.case_studies
+id: node.case_studies.field_short_description
+field_name: field_short_description
+entity_type: node
+bundle: case_studies
+label: 'Short description'
+description: 'A brief summary shown on the listing page card. Keep it to 1-2 sentences, longer text will be visually truncated.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

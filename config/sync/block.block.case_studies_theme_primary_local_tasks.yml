@@ -1,0 +1,22 @@
+uuid: 9c6a75da-d2be-43f2-905c-5d9c48ed868e
+langcode: en
+status: false
+dependencies:
+  theme:
+    - case_studies_theme
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: case_studies_theme_primary_local_tasks
+theme: case_studies_theme
+region: header
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

@@ -1,0 +1,8 @@
+{% if q is not empty %}
+  {{ q }}
+{% endif %}
+{% embed 'case_studies_theme:filter' %}
+  {% block content %}
+    {{ form }}
+  {% endblock %}
+{% endembed %}

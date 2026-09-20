@@ -1,0 +1,29 @@
+uuid: ac352e5f-497a-4a67-84c1-09c2a975bac9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_region
+    - node.type.case_studies
+    - taxonomy.vocabulary.region
+id: node.case_studies.field_region
+field_name: field_region
+entity_type: node
+bundle: case_studies
+label: Region
+description: 'Select the region this case study is associated with. Used to power the Region filter on the listing page.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      region: region
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

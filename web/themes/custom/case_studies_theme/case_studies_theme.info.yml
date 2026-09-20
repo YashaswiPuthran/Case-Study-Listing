@@ -1,0 +1,12 @@
+name: Case Studies Theme
+type: theme
+base theme: false
+description: 'Custom theme for the filterable Case Studies listing.'
+package: Custom
+core_version_requirement: ^10 || ^11
+libraries:
+  - case_studies_theme/global-styling
+regions:
+  header: Header
+  content: Content
+  footer: Footer
