@@ -1,0 +1,30 @@
+.case-studies-wrap {
+  padding-top: var(--space-lg);
+  padding-bottom: var(--space-lg);
+}
+
+.case-studies-header {
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  font-weight: 600;
+  margin-bottom: var(--space-md);
+}
+
+.case-studies-grid {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+@media (min-width: 1024px) {
+  .case-studies-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+
+  .case-studies-header {
+    font-size: 2rem;
+    margin-bottom: var(--space-lg);
+  }
+}
