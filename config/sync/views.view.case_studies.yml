@@ -482,7 +482,7 @@ display:
           entity_type: node
           entity_field: created
           plugin_id: date
-          order: ASC
+          order: DESC
           expose:
             label: Newest
             field_identifier: created
@@ -628,7 +628,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: text
-          empty: false
+          empty: true
           content:
             value: 'Case Studies'
             format: basic_html
