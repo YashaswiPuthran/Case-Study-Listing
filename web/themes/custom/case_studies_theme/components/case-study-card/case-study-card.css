@@ -51,20 +51,8 @@
   letter-spacing: 0.02em;
 }
 
-.case-study-card__tag--healthcare {
-  background-color: var(--tag-healthcare);
-}
-
-.case-study-card__tag--retail {
-  background-color: var(--tag-retail);
-}
-
-.case-study-card__tag--finance {
-  background-color: var(--tag-finance);
-}
-
-.case-study-card__tag--technology {
-  background-color: var(--tag-technology);
+.case-study-card__tag--industry {
+  background-color: var(--color-primary);
 }
 
 .case-study-card__tag--region {

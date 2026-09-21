@@ -19,11 +19,6 @@
   --space-lg: 2rem;
 
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-
-  --tag-healthcare: #0e7c7b;
-  --tag-retail: #c2410c;
-  --tag-finance: #1e3a8a;
-  --tag-technology: #4c1d95;
 }
 
 body {
